@@ -12,16 +12,18 @@ const EntriesMain = () => {
         const data = await fetch('https://control.dos17.digital/wp-json/wp/v2/posts');
         const posts = await data.json();
         console.log(posts)
-        setEntries(posts)
+        setEntries([posts[0],posts[1],posts[2]])
     }
 
     console.log(entries[0])
 
-    return <section className='bg-d17-light-gray p-10 mt-10'>
+    return <section className='bg-d17-light-gray pt-1 px-10 pb-10 mt-10'>
+        <h2 className="section-title">Blog</h2>
         <div className="mx-auto container md:grid grid-cols-3 gap-4">
         {
             entries.map(entry => {
                 return <div className="bg-d17-white rounded-2xl overflow-hidden mb-10 md:mb-0">
+
                     <img src={entry.featured_media_src_url} alt={entry.slug + ' img'} className="h-64 object-cover w-full"/>
                     <div className="p-4 flex flex-col">
                         <h3 className="font-bold text-2xl">{entry.title.rendered}</h3>

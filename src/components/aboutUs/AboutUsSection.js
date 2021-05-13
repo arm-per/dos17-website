@@ -3,7 +3,7 @@ const AboutUsSection = (props) => {
 
     return <section className="sm:grid grid-cols-2 items-center">
         <div>
-            <h1 className="font-bold text-3xl text-center">¿Quiénes somos?</h1>
+            <h2 className="font-bold text-3xl text-center">¿Quiénes somos?</h2>
         </div>
         <div className="w-full flex overflow-hidden">
             <div className="p-4 w-full flex-shrink-0">
