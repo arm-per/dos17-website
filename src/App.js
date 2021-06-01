@@ -1,9 +1,15 @@
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 //import Services from "./components/services/Services";
 import Home from "./Home";
-import Marketing from "./Marketing";
+import Marketing from "./components/Marketing/Marketing";
+import Portfolio from "./components/Porfolio/Portoflio";
+import Web from "./components/Web/Web";
+import Content from "./components/Content/Content";
+import Diseno from "./components/Diseno/Diseno";
+import BlogEntries from "./components/Blog/BlogEntries";
 import Footer from "./components/footer/Footer";
 import logo from "./components/header/logotipo.svg";
+import { Post } from './components/POST/Post'
 
 const App = () => {
 
@@ -20,45 +26,45 @@ const App = () => {
                         <a href="/#servicios" className="nav-link hover:text-d17-web-20">Servicios</a>
                         <Link to="/Portafolio" className="nav-link hover:text-d17-web-20">Portafolio</Link>
                         <Link to="/Blog" className="nav-link hover:text-d17-web-20">Blog</Link>
-                        <Link to="/Contacto" className="nav-link hover:text-d17-web-20">Contacto</Link>
-                        <Link to="/Cotizador" className="nav-link-principal hover:bg-d17-web-20">Cotiza tu proyecto</Link>
+                        <a href="/#Contacto" className="nav-link hover:text-d17-web-20">Contacto</a>
+                        <a href="/#Contacto" className="nav-link-principal hover:bg-d17-web-20">Cotiza tu proyecto</a>
                     </nav>
                 </div>
             </header>
             <Switch>
-                <Route path="/Nosotros">
-                    <h1>Hola desde nosotros</h1>
-                </Route>
                 <Route path="/Marketing">
                     <Marketing/>
                 </Route>
                 <Route path="/Design">
-                    <h1>Hola desde Diseño</h1>
+                    <Diseno/>
                 </Route>
                 <Route path="/Contenido">
-                    <h1>Hola desde Contenido</h1>
+                    <Content/>
                 </Route>
                 <Route path="/Web">
-                    <h1>Hola desde Web</h1>
+                    <Web/>
                 </Route>
                 <Route path="/Portafolio">
-                    <h1>Hola desde portafolio</h1>
+                    <Portfolio/>
                 </Route>
                 <Route path="/Blog">
-                    <h1>Hola desde blog</h1>
-                </Route>
-                <Route path="/Contacto">
-                    <h1>Hola desde contacto</h1>
+                    <BlogEntries/>
                 </Route>
                 <Route path="/Cotizador">
                     <h1>Hola desde el cotizador</h1>
                 </Route>
+                <Route path="/post">
+                    <Post/>
+                </Route>
                 <Route path="/">
                     <Home />
                 </Route>
+
             </Switch>
         </Router>
         <Footer/>
+
+
 
         </>
 }

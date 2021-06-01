@@ -12,15 +12,19 @@ module.exports = {
                     "20": "#D1FF76",
                     "50": "#BEEE62",
                 },
-                white: "#ffffff",
+                "white": "#ffffff",
                 "dark-light": "#4D6577",
                 "light-gray": "#dedede",
+                "light": "#f9f9f9",
             },
         },
     extend: {
         height: {
-            slider: '480px',
+            slider: '1080px',
         },
+        width: {
+            blog: '960px',
+        }
     },
   },
   variants: {

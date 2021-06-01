@@ -1,3 +1,8 @@
+import banner01 from './images/banner0.png';
+import banner02 from './images/banner1.png';
+import banner03 from './images/banner2.png';
+import banner04 from './images/banner3.png';
+
 import {useEffect} from 'react';
 
 const Slider = () => {
@@ -25,12 +30,12 @@ const Slider = () => {
 
     })
 
-    return <section className="container mx-auto  overflow-hidden relative">
-        <div id="slide-container" className="flex w-full ">
-            <img className="block min-w-full w-full h-slider object-cover" src="https://images.unsplash.com/photo-1619443711421-d661cbf7a1a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1454&q=80" alt=""/>
-            <img className="block min-w-full w-full h-slider object-cover" src="https://images.unsplash.com/photo-1619443711421-d661cbf7a1a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1454&q=80" alt=""/>
-            <img className="block min-w-full w-full h-slider object-cover" src="https://images.unsplash.com/photo-1619443711421-d661cbf7a1a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1454&q=80" alt=""/>
-            <img className="block min-w-full w-full h-slider object-cover" src="https://images.unsplash.com/photo-1619443711421-d661cbf7a1a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1454&q=80" alt=""/>
+    return <section className=" mx-auto container overflow-hidden relative">
+        <div id="slide-container" className="flex w-full">
+            <img className="block min-w-full w-full object-cover" src={banner01} alt=""/>
+            <img className="block min-w-full w-full object-cover" src={banner02} alt=""/>
+            <img className="block min-w-full w-full object-cover" src={banner03} alt=""/>
+            <img className="block min-w-full w-full object-cover" src={banner04} alt=""/>
             <div className="absolute z-10 bottom-1 slider-navigator">
                 <input type="radio" className="bg-d17-mkt opacity-50 slider-radio" name="main-slider" value="0" aria-checked={"true"}/>
                 <input type="radio" className="bg-d17-dg opacity-50 slider-radio" name="main-slider" value="1"/>
