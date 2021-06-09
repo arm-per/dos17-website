@@ -56,7 +56,7 @@ const Customers = (props) => {
                     })
                 }
             </div>
-            <a href={props.url} className="route-section-link mx-auto hover:bg-d17-dark-light">Conocer Portafolio</a>
+            <a href="/portafolio" className="route-section-link mx-auto hover:bg-d17-dark-light">Conocer Portafolio</a>
         </div>
 
 

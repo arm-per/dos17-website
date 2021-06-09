@@ -28,10 +28,10 @@ const Portfolio = () => {
 
         <div className="bg-d17-light py-4">
             <h2 className="section-title">Conoce nuestro portafolio</h2>
-            <div className="container mx-auto grid grid-cols-3 gap-4">
+            <div className="container mx-auto grid md:grid-cols-3 gap-4">
                 {
                     portafolio.map((entry, index) => {
-                        return <div className="bg-d17-white rounded-2xl overflow-hidden mb-10 md:mb-0" key={index}>
+                        return <div className="bg-d17-white rounded-2xl overflow-hidden mb-10 md:mb-0 m-3 mb:m-0" key={index}>
 
                             <img src={entry.featured_media_src_url} alt={entry.slug + ' img'} className="h-64 object-cover w-full"/>
                             <div className="p-4 flex flex-col h-auto ">

@@ -212,4 +212,15 @@ input[name="slider-1"]:checked{
     width: 95%;
 }
 
+@media (max-width: 1024px){
+    #main-menu{
+        position: absolute;
+        top: 73px;
+        width: 100%;
+        left: 0;
+        padding: 20px;
+        background-color: #212B33;
+        z-index: 100;
+    }
+}
 

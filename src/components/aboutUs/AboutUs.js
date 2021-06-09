@@ -11,6 +11,7 @@ const StyledDiv = styled.div`
   justify-content: center;
   align-items: center;
   justify-self: center;
+  margin: 0 auto;
 `
 
 export default function AboutUs(){

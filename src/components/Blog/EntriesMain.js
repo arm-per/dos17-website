@@ -6,17 +6,18 @@ const EntriesMain = () => {
 
     const [entries, setEntries] = useState([]);
 
+    const obtenerDatos = async ()=> {
+        const data = await fetch('https://control.dos17.digital/wp-json/wp/v2/posts?per_page=3');
+        const posts = await data.json();
+        //setEntries([posts[0],posts[1],posts[2]])
+        setEntries(posts)
+    }
+
     useEffect(()=>{
         obtenerDatos()
     }, [])
 
-    const obtenerDatos = async ()=> {
-        const data = await fetch('https://control.dos17.digital/wp-json/wp/v2/posts?per_page=3');
-        const posts = await data.json();
-        console.log(posts)
-        //setEntries([posts[0],posts[1],posts[2]])
-        setEntries(posts)
-    }
+
 
 
     return <section className='bg-d17-light pt-1 px-10 pb-10 mt-10'>

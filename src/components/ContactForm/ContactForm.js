@@ -4,7 +4,7 @@ export const ContactForm = () => {
         <section className="mx-auto container mt-4" id="Contacto">
             <h2 className="section-title">Contacto</h2>
             <div className="md:grid grid-cols-2 gap-6">
-                <form action="" className=" mb-4 md:mb-0 bg-d17-dark rounded-2xl p-4">
+                <form action="email.php" className=" mb-4 md:mb-0 bg-d17-dark rounded-2xl p-4">
                     <p className="text-d17-web-50 text-center font-bold">Déjanos tus datos y nos comunicaremos contigo lo antes posible</p>
                     <input type="text" name="name" placeholder="Nombre" id="name" className="w-full p-2 mt-4 rounded-lg"/>
                     <input type="text" name="phone" placeholder="(618) 000 0000" id="phone" className="w-full p-2 mt-4 rounded-lg"/>
@@ -26,7 +26,7 @@ export const ContactForm = () => {
                         <input type="radio" name="service" value="web" className="appearance-none block w-6 h-6 border-2 border-d17-web-50 rounded-full web-check"/>
                         <span className="text-d17-white ml-3 block">Web</span>
                     </div>
-                    <input type="text" name="money" placeholder="¿Cuánto es tu presupuesto?" id="business" className="w-full p-2 mt-4 rounded-lg"/>
+                    <input type="text" name="money" placeholder="¿Cuánto es tu presupuesto?" id="money" className="w-full p-2 mt-4 rounded-lg"/>
                     <input type="submit" value="Enviar" className=" block py-2 px-6 rounded-lg mx-auto mt-4 submit-btn font-bold"/>
 
                 </form>

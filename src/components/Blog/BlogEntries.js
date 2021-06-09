@@ -11,18 +11,15 @@ const BlogEntries = () => {
 
     useEffect(()=>{
         obtenerDatos()
-        console.log(entries)
     }, [entries, secondEntries, mainentry])
 
     const obtenerDatos = async ()=> {
         const data = await fetch('https://control.dos17.digital/wp-json/wp/v2/posts');
         const posts = await data.json();
-        console.log(posts)
         setMainentry([posts[0]]);
         setSecondentries([posts[1],posts[2],posts[3]])
         //setEntries([posts[0],posts[1],posts[2]])
         setEntries(posts.slice(4))
-
     }
 
 

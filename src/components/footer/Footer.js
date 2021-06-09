@@ -8,25 +8,23 @@ const Footer = () => {
                 <nav className="py-2.5 sm:py-8 sm:pl-5">
                     <h3 className="text-d17-web-50 text-xl">Mapa del sitio</h3>
                     <a className="block text-d17-white hover:underline py-1" href="/">Inicio</a>
-                    <a className="block text-d17-white hover:underline py-1" href="index.html">Servicios</a>
-                    <a className="block text-d17-white hover:underline py-1" href="index.html">Portafolio</a>
-                    <a className="block text-d17-white hover:underline py-1" href="index.html">Nosotros</a>
+                    <a className="block text-d17-white hover:underline py-1" href="/#servicios">Servicios</a>
+                    <a className="block text-d17-white hover:underline py-1" href="/portafolio">Portafolio</a>
+                    <a className="block text-d17-white hover:underline py-1" href="/#nosotros">Nosotros</a>
                 </nav>
 
                 <nav className="py-2.5 sm:py-8 sm:pl-5">
                     <h3 className="text-d17-web-50 text-xl">Impulsa tu proyecto</h3>
-                    <a className="block text-d17-white hover:underline py-1" href="index.html"> Contacto </a>
-                    <a className="block text-d17-white hover:underline py-1" href="index.html">Cotiza tu proyecto</a>
-                    <h3 className="text-d17-web-50 text-xl">Privacidad</h3>
-                    <a className="block text-d17-white hover:underline py-1" href="index.html"> Política de privacidad </a>
+                    <a className="block text-d17-white hover:underline py-1" href="/#contacto"> Contacto </a>
+                    <a className="block text-d17-white hover:underline py-1" href="/#contacto">Cotiza tu proyecto</a>
                 </nav>
 
                 <nav className="py-2.5 sm:py-8 sm:pl-5">
                     <h3 className="text-d17-web-50 text-xl">Síguenos</h3>
-                    <a className="block text-d17-white hover:underline py-1" href="Contacto"> Facebook </a>
-                    <a className="block text-d17-white hover:underline py-1" href="Servicios">Instagram</a>
-                    <a className="block text-d17-white hover:underline py-1" href="Servicios">Youtube</a>
-                    <a className="block text-d17-white hover:underline py-1" href="Servicios">Blog</a>
+                    <a className="block text-d17-white hover:underline py-1" href="https://www.facebook.com/dos17digital" rel="noreferrer" target="_blank"> Facebook </a>
+                    <a className="block text-d17-white hover:underline py-1" href="https://www.instagram.com/dos17digital" rel="noreferrer" target="_blank">Instagram</a>
+                    <a className="block text-d17-white hover:underline py-1" href="https://www.youtube.com/channel/UCgqp13kRbKLNTXpsa5W5zNQ" target="_blank" rel="noreferrer">Youtube</a>
+                    <a className="block text-d17-white hover:underline py-1" href="/blog">Blog</a>
                 </nav>
 
                 <div className="py-2.5 sm:py-8 sm:pl-5 sm:col-span-3 md:col-span-1">
